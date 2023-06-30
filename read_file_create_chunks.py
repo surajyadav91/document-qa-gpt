@@ -23,6 +23,10 @@ class ReadCreateChunk:
     def store_chunks(self, file_path):
         documents = self.read_file(file_path)
         chunks = self.text_splitter(documents)
+        chunk_list = []
         
+        for i in range(len(chunks)):
+            chunk_list.append(chunks[i].page_content)
+
         with open('chunks.pkl', 'wb') as f:
             pickle.dump(chunks, f)
