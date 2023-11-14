@@ -2,7 +2,8 @@
 
 ## Overview
 `document-qa-gpt` is a cutting-edge project leveraging the power of generative AI for document question answering. This project focuses on processing documents, chunking them into manageable parts, and then utilizing these chunks for question-answering tasks. For this project you need to have OpenAI's API key stored in file called key.txt in the root directory of the project. The key should be the only thing in the file.
-If the the question asked in not relevant to the document, we will get the response as this information is not present in the document.
+
+If question asked is not relevant to the document, we will get the response as this information is not present in the document.
 
 ## Steps
 - **Document Chunking**: Splits PDF documents into smaller, manageable chunks.
